@@ -308,6 +308,10 @@
                 answer: "Smart fan control是設定溫度對應duty的table給BIOS，讓風扇可以依照溫度變化自動控制，溫度低的時後轉速低降低噪音，溫度高的時後轉速拉高保護零件，在溫度與Noise之間取的平衡點。"
             },
             {
+                keywords: ["smart fan control","說明"],
+                answer: "Smart fan control是設定溫度對應duty的table給BIOS，讓風扇可以依照溫度變化自動控制，溫度低的時後轉速低降低噪音，溫度高的時後轉速拉高保護零件，在溫度與Noise之間取的平衡點。"
+            },
+            {
                 keywords: ["smart fan風扇","風扇"],
                 answer: "所謂的smart fan風扇，指的是有tech pin/ PWM pin的風扇，有四根pin，tech pin可以讀轉速，PWM pin可以用duty控制風扇轉速。\n如果風扇沒有smart fan功能，那麼風扇只有兩根pin，只有正負兩根電源線。"
             },
@@ -456,6 +460,14 @@
                 answer: "噪音測試方式分Sound Pressure(研華常用方式)/Sound Power/Sound Quality。\n因為系統風扇廠商統一噪音測試方式為Sound Pressure，所以強烈建議系統規格也用Sound Pressure，這樣才能初步計算。\n系統Sound Pressure測試規範為ISO7779:2018"
             },
             {
+                keywords: ["噪音", "什麼"],
+                answer: "噪音測試方式分Sound Pressure(研華常用方式)/Sound Power/Sound Quality。\n因為系統風扇廠商統一噪音測試方式為Sound Pressure，所以強烈建議系統規格也用Sound Pressure，這樣才能初步計算。\n系統Sound Pressure測試規範為ISO7779:2018"
+            },
+            {
+                keywords: ["噪音", "說明"],
+                answer: "噪音測試方式分Sound Pressure(研華常用方式)/Sound Power/Sound Quality。\n因為系統風扇廠商統一噪音測試方式為Sound Pressure，所以強烈建議系統規格也用Sound Pressure，這樣才能初步計算。\n系統Sound Pressure測試規範為ISO7779:2018"
+            },
+            {
                 keywords: ["噪音", "型式"],
                 answer: "噪音測試方式分Sound Pressure(研華常用方式)/Sound Power/Sound Quality。\n因為系統風扇廠商統一噪音測試方式為Sound Pressure，所以強烈建議系統規格也用Sound Pressure，這樣才能初步計算。\n系統Sound Pressure測試規範為ISO7779:2018"
             },
@@ -497,15 +509,27 @@
             },
             {
                 keywords: ["模擬","時間"],
-                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。"
+                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。\n目前模擬軟體是五個人用兩套，需要排隊使用，所以時間會比較久，請詢問Thermal目前可能時間。"
+            },
+            {
+                keywords: ["模擬","時程"],
+                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。\n目前模擬軟體是五個人用兩套，需要排隊使用，所以時間會比較久，請詢問Thermal目前可能時間。"
             },
             {
                 keywords: ["simulation","時間"],
-                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。"
+                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。\n目前模擬軟體是五個人用兩套，需要排隊使用，所以時間會比較久，請詢問Thermal目前可能時間。"
+            },
+            {
+                keywords: ["simulation","時程"],
+                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。\n目前模擬軟體是五個人用兩套，需要排隊使用，所以時間會比較久，請詢問Thermal目前可能時間。"
             },
             {
                 keywords: ["模擬","多久"],
-                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。"
+                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。\n目前模擬軟體是五個人用兩套，需要排隊使用，所以時間會比較久，請詢問Thermal目前可能時間。"
+            },
+            {
+                keywords: ["simulation","多久"],
+                answer: "Thermal simulation需要3~4個工作天，看系統複雜度及當下工作狀況。\n目前模擬軟體是五個人用兩套，需要排隊使用，所以時間會比較久，請詢問Thermal目前可能時間。"
             },
             {
                 keywords: ["theraml","組織"],
@@ -921,7 +945,7 @@
             // 查無資料時，寫入 Google 試算表
             submitToGoogleSheet(userText);
             
-            return `Sorry~ 小R目前無法回答這問題。\n不過別擔心，系統已經自動將沒被回覆的問題傳送給管理員藍迪，我們會盡速擴充資料庫，然後進版喔，謝拉！`;
+            return `Sorry~ 小R目前無法回答這問題。\n不過別擔心，系統已經自動將沒被回覆的問題傳送給管理員藍迪。\n我們會盡速擴充資料庫，然後進版給你參考，謝拉！`;
         }
 
         function appendMessage(text, sender) {
